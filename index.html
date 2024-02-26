@@ -36,12 +36,12 @@
 </style>
 
 </head>
-<body class="font-lato lg:mx-20 lg:mt-20 mx-0">
-  <header>
+<body >
+  <header class="font-lato lg:mx-20 lg:mt-5 mx-0">
     <!-- navbar starts here -->
     <div class="navbar  bg-primary-color lg:rounded-full">
       <div class="navbar-start text-[#FFF] hidden lg:flex">
-        <ul class="menu menu-horizontal px-1 text-xl">
+        <ul class="menu menu-horizontal px-1">
           <li><a>Home</a></li>
           <li><a>About Us</a></li>
           <li><a>Shop</a></li>
@@ -49,12 +49,12 @@
           
         </ul>
       </div>
-      <div class="navbar-center pr-16 text-[#FFF]"><img src="./images/logo.png" alt="">
-        <a class="btn btn-ghost text-2xl">Fruit Burst</a>
+      <div class="navbar-center text-[#FFF] mr-44"><img src="./images/logo.png" alt="">
+        <a class=" text-2xl">Fruit Burst</a>
       </div>
-      <div class="lg:hidden text-white text-3xl pl-28"><i class="fa-solid fa-burger"></i></div>
-      <div class="lg:navbar-end hidden lg:flex">
-        <a class="btn text-left  px-36 py-2 bg-[#FFF] rounded-3xl  border-0">Search here<i class="fa-solid fa-magnifying-glass"></i></a>
+      <div class="lg:hidden text-white text-3xl md:ml-80"><i class="fa-solid fa-burger"></i></div>
+      <div class="lg:navbar-end hidden lg:flex ml-36 mr-6">
+        <a class="btn text-left  px-16 py-2 bg-[#FFF] rounded-3xl  border-0">Search here<i class="fa-solid fa-magnifying-glass"></i></a>
       </div>
     </div>
     <!-- Banner starts here -->
@@ -128,23 +128,37 @@
       
     
 
-    <div class="chart lg:flex justify-center absolute left-60 
-    -bottom-10 gap-10 w-2/3 mx-auto bg-[#FFF] hidden">
+    <div class="chart lg:flex mx-36 justify-center p-10 items-center absolute -bottom-12  gap-16 bg-[#FFF] hidden rounded-lg">
+      <div class="text-center">
       <img src="./images/fruit1.png" alt="">
+      <p>Grapes</p>
+    </div>
+    <div class="text-center">
       <img src="./images/fruit2.png" alt="">
+      <p>Orange</p>
+    </div>
+    <div class="text-center">
       <img src="./images/fruit3.png" alt="">
+      <p>Mango</p>
+    </div>
+    <div class="text-center">
       <img src="./images/fruit4.png" alt="">
+      <p>Strawberry</p>
+    </div>
+    <div class="text-center">
       <img src="./images/fruit5.png" alt="">
+      <p>Dragon</p>
+    </div>
     </div>
   </div>
   
   </header>
 
-  <body>
+  <main class="font-lato lg:mx-20 lg:mt-5 mx-0">
     <!-- Deal of The Day -->
     <section class="lg:mt-40">
-    <div class="flex justify-between lg:flex-row flex-col">
-      <div class="mb-5 mx-5 mt-5" >
+    <div class="flex justify-between lg:flex-row flex-col  text-center">
+      <div class="mb-5 mx-5 mt-5 lg:text-left" >
        <h3 class="text-3xl font-extrabold">Deal of the day</h3>
        <br>
        <p class="text-sm text-gray-500">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -158,7 +172,7 @@
       </div>
     </div>
     <!-- card section starts here -->
-    <div class="flex justify-between items-center lg:flex-row flex-col gap-y-7 lg:gap-5">
+    <div class="lg:flex lg:justify-between items-center lg:flex-row flex-col gap-y-7 lg:gap-5 md:grid md:grid-cols-2">
       <!-- card 1 -->
       <div class="card w-96 bg-base-100 shadow-xl">
         <figure class="px-10 pt-10">
@@ -349,54 +363,55 @@
 
     <!-- Meet the Team Sections -->
     <section>
-      <div class="hero min-h-screen" style="background-image: url(./images/team.png);">
+      <div  class="hero lg:min-h-screen" style="background-image: url(./images/team.png);">
         <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content text-center text-neutral-content">
-          <div class="max-w-md flex flex-col">
-            <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
-            <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        <div class="hero-content text-center text-neutral-content lg:p-20">
+          <div class=" flex flex-col">
+            <h1 class="mb-5 text-3xl lg:text-5xl font-bold">Meet the team section</h1>
+            <p class="mb-5 p-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
             <!-- card -->
-            <div class="flex lg:justify-between gap-10 lg:flex-row flex-col">
-              <div class=" mx-32 w-[150px] lg:mx-0  space-y-2" >
+            <div class="flex justify-evenly lg:gap-x-32 items-center lg:flex-row flex-col md:flex-row  md:justify-center md:gap-7 ">
+              <div class="mb-10" >
                 <img src="./images/member1.png" alt="">
-                <h3 class="text-xs">Awlad Hossain</h3>
-                <p class="text-sm">Fruits Expert</p>
+                <h3 class="text-2xl text-white mt-4">Awlad Hossain</h3>
+                <p class="text-sm text-white mb-4">Fruits Expert</p>
                 <div class="flex justify-center gap-3">
-                  <i class="fa-brands fa-facebook text-primary-color bg-white rounded-full"></i>
-                  <i class="fa-brands fa-twitter text-primary-color"></i>
-                  <i class="fa-brands fa-linkedin text-primary-color"></i>
+                  <i class="fa-brands fa-facebook bg-primary-color text-white w-6 h-6  pt-1 rounded-xl"></i>
+                  <i class="fa-brands fa-twitter bg-primary-color text-white w-6 h-6  pt-1 rounded-xl"></i>
+                  <i class="fa-brands fa-linkedin bg-primary-color text-white w-6 h-6  pt-1 rounded-xl"></i>
                 </div>
               </div>
-              <div class=" mx-32 w-[150px] lg:mx-0 space-y-2" >
+              <div class="mb-10" >
                 <img src="./images/member2.png" alt="">
-                <h3 class="text-xs">Awlad Hossain</h3>
-                <p class="text-sm">Fruits Expert</p>
+                <h3 class="text-2xl text-white mt-4">Safia Chowdhury</h3>
+                <p class="text-sm text-white mb-4">Fruits Expert</p>
                 <div class="flex justify-center gap-3">
-                  <i class="fa-brands fa-facebook text-primary-color bg-white rounded-full"></i>
-                  <i class="fa-brands fa-twitter text-primary-color"></i>
-                  <i class="fa-brands fa-linkedin text-primary-color"></i>
+                  <i class="fa-brands fa-facebook bg-primary-color text-white w-6 h-6  pt-1 rounded-xl"></i>
+                  <i class="fa-brands fa-twitter bg-primary-color text-white w-6 h-6  pt-1 rounded-xl"></i>
+                  <i class="fa-brands fa-linkedin bg-primary-color text-white w-6 h-6  pt-1 rounded-xl"></i>
                 </div>
               </div>
-              <div class=" mx-32 w-[150px] lg:mx-0 space-y-2" >
+              <div class="mb-10" >
                 <img src="./images/member3.png" alt="">
-                <h3 class="text-xs">Awlad Hossain</h3>
-                <p class="text-sm">Fruits Expert</p>
+                <h3 class="text-2xl text-white mt-4">Rokib Hossain</h3>
+                <p class="text-sm text-white mb-4">Fruits Expert</p>
                 <div class="flex justify-center gap-3">
-                  <i class="fa-brands fa-facebook text-primary-color bg-white rounded-full"></i>
-                  <i class="fa-brands fa-twitter text-primary-color"></i>
-                  <i class="fa-brands fa-linkedin text-primary-color"></i>
+                  <i class="fa-brands fa-facebook bg-primary-color text-white w-6 h-6  pt-1 rounded-xl"></i>
+                  <i class="fa-brands fa-twitter bg-primary-color text-white w-6 h-6  pt-1 rounded-xl"></i>
+                  <i class="fa-brands fa-linkedin bg-primary-color text-white w-6 h-6  pt-1 rounded-xl"></i>
                 </div>
               </div>
-              <div class=" mx-32 w-[150px] lg:mx-0 space-y-2" >
+              <div class="mb-10" >
                 <img src="./images/member4.png" alt="">
-                <h3 class="text-xs">Awlad Hossain</h3>
-                <p class="text-sm">Fruits Expert</p>
+                <h3 class="text-2xl text-white mt-4">Chaity</h3>
+                <p class="text-sm text-white mb-4">Fruits Expert</p>
                 <div class="flex justify-center gap-3">
-                  <i class="fa-brands fa-facebook text-primary-color bg-white rounded-full"></i>
-                  <i class="fa-brands fa-twitter text-primary-color"></i>
-                  <i class="fa-brands fa-linkedin text-primary-color"></i>
+                  <i class="fa-brands fa-facebook bg-primary-color text-white w-6 h-6  pt-1 rounded-xl"></i>
+                  <i class="fa-brands fa-twitter bg-primary-color text-white w-6 h-6  pt-1 rounded-xl"></i>
+                  <i class="fa-brands fa-linkedin bg-primary-color text-white w-6 h-6  pt-1 rounded-xl"></i>
                 </div>
               </div>
+          
             </div>
            
           </div>
@@ -405,13 +420,13 @@
     </section>
 
     <!-- Choose us Section -->
-    <section class="mt-5">
-      <h1 class="text-2xl text-center font-extrabold">Why Choose Us</h1>
+    <section class="mt-20">
+      <h1 class="text-5xl text-center font-extrabold">Why Choose Us</h1>
       <br>
       <p class="text-sm text-center">Contrary to popular belief, is not simply random text. It has roots in a <br> piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
       <br>
-      <div class="grid lg:grid-cols-3 gap-7 mb-5 grid-cols-1 mx-10">
-        <div class="space-y-12">
+      <div class="grid lg:grid-cols-3 gap-3 mb-5 grid-cols-1 mx-10 lg:grid-rows-1 grid-rows-3">
+        <div class="space-y-12 row-start-2 row-end-3 lg:col-start-1 lg:col-end-2 lg:row-start-1 ">
           <div class="flex justify-around items-center gap-5">
             <i class="fa-solid fa-users text-3xl"></i>
             <div>
@@ -423,7 +438,7 @@
           <div class="flex justify-around items-center gap-5">
             <i class="fa-solid fa-spray-can-sparkles text-3xl"></i>
             <div>
-              <h2 class="text-xl">Dedicated Team</h2>
+              <h2 class="text-xl">Fresh is Best</h2>
               <hr class="mr-20">
               <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
             </div>
@@ -431,75 +446,78 @@
           <div class="flex justify-around items-center gap-5">
             <i class="fa-solid fa-gift text-3xl"></i>
             <div>
-              <h2 class="text-xl">Dedicated Team</h2>
+              <h2 class="text-xl">Gift Certificates</h2>
               <hr class="mr-20">
               <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
             </div>
           </div>
         </div>
-        <img src="./images/whychoose1.png" alt="">
-        <div class="space-y-12">
+        <img src="./images/whychoose1.png" alt="" 
+         class="row-start-1 row-end-2 lg:col-start-2 lg:col-end-3 md:w-full">
+        <div class="lg:space-y-12 row-start-3 row-end-4 lg:col-start-3 lg:col-end-4 lg:row-start-1">
           <div class="flex justify-around items-center gap-5 text-right">
             
             <div>
-              <h2 class="text-xl">Dedicated Team</h2>
+              <h2 class="text-xl">Integrated Supplier</h2>
               <hr class="ml-20">
               <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
             </div>
-            <i class="fa-solid fa-users text-3xl"></i>
+            <i class="fa-solid fa-truck-field-un text-3xl"></i>
           </div>
           <div class="flex justify-around items-center gap-5 text-right">
             
             <div>
-              <h2 class="text-xl">Dedicated Team</h2>
+              <h2 class="text-xl">Sustainable Practice</h2>
               <hr class="ml-20">
               <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
             </div>
-            <i class="fa-solid fa-spray-can-sparkles text-3xl"></i>
+            <i class="fa-solid fa-ice-cream text-3xl"></i>
           </div>
           <div class="flex justify-around items-center gap-5 text-right">
             <div>
-              <h2 class="text-xl">Dedicated Team</h2>
+              <h2 class="text-xl">The Benefits Only</h2>
               <hr class="ml-20">
               <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
             </div>
-            <i class="fa-solid fa-gift text-3xl"></i>
+            <i class="fa-solid fa-bone text-3xl"></i>
           </div>
         </div>
       </div>
     </section>
 
-  </body>
-  <footer class="footer footer-center p-10 bg-black text-primary-color text-primary-content">
-    <aside class="flex justify-center gap-2">
-     <img src="./images/logo.png" alt="">
-     <h3 class="text-4xl font-bold">Fruit Burst</h3>
-     
+  </main>
+  
+
+<footer class="footer footer-center p-10 bg-black text-white">
+  <aside class="flex justify-center gap-2">
+   <img src="./images/logo.png" alt="">
+   <h3 class="text-4xl font-bold">Fruit Burst</h3>
+   
+    
+  </aside> 
+  <nav>
+    <div >
+      <ul class="flex  gap-6 font-bold text-xl mb-5 flex-wrap justify-center text-white">
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">Support</a></li>
+        <li><a href="">My Account</a></li>
+        <li><a href="">All Shop</a></li>
+      </ul>
       
-    </aside> 
-    <nav>
-      <div >
-        <ul class="flex  gap-6 font-bold text-xl mb-5 flex-wrap justify-center">
-          <li><a href="">Home</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Shop</a></li>
-          <li><a href="">Support</a></li>
-          <li><a href="">My Account</a></li>
-          <li><a href="">All Shop</a></li>
-        </ul>
-        
-      </div>
-      <div class="grid grid-flow-col gap-6 font-bold text-3xl">
-        <i class="fa-brands fa-facebook text-primary-color bg-white rounded-full"></i>
-        <i class="fa-brands fa-twitter text-primary-color"></i>
-        <i class="fa-brands fa-linkedin text-primary-color"></i>
-        <i class="fa-brands fa-apple"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-        
-      </div>
-    </nav>
-    <p>Copyright © 2024 - All right reserved</p>
-  </footer>
+    </div>
+    <div class="grid grid-flow-col gap-6 font-bold text-3xl">
+      <i class="fa-brands fa-facebook text-white rounded-full"></i>
+      <i class="fa-brands fa-twitter text-white"></i>
+      <i class="fa-brands fa-linkedin text-white"></i>
+      <i class="fa-brands fa-apple text-white"></i>
+      <i class="fa-brands fa-instagram text-white"></i>
+      <i class="fa-brands fa-youtube text-white"></i>
+      
+    </div>
+  </nav>
+  <p class="text-white">Copyright © 2024 - All right reserved</p>
+</footer>
 </body>
 </html>
